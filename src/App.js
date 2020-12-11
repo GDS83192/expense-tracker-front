@@ -15,7 +15,7 @@ function App() {
      <br/>
      <Route path="/" exact component={SpendList}/>
      <Route path="/edit/:id" component={EditSpend}/>
-     <Route path="create" component={CreateSpend}/>
+     <Route path="/create" component={CreateSpend}/>
      <Route path="/user" component={CreateUser}/>
    </Router>
   );
