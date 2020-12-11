@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import axios from 'axios'
 export default class CreateSpend extends Component{
     constructor(props){
         super(props);
@@ -17,10 +17,18 @@ export default class CreateSpend extends Component{
     }
 
     componentDidMount() {
-        this.setState({ 
-          users: ['test user'],
-          username: 'test user'
-        });
+       axios.get('http://localhost:5000/users/')
+        .then(response =>{
+            if (response.data.length > 0){
+                this.setState({
+                    users: response.data.map(user => user.username),
+                    username: response.data[0].username
+                });
+            }
+        })
+        .catch((error) =>{
+            console.log(error);
+        })
       }
 
     onChangeUsername(e) {
@@ -51,7 +59,8 @@ export default class CreateSpend extends Component{
             amount: this.state.amount,
         }
         console.log(spend);
-
+        axios.post('http://localhost:5000/spends/add', spend)
+            .then(res => console.log(res.data))
         // window.location = '/';
     }
     //Need to look up what window.location = '/' does
