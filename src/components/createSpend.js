@@ -52,7 +52,7 @@ export default class CreateSpend extends Component{
         }
         console.log(spend);
 
-        window.location = '/';
+        // window.location = '/';
     }
     //Need to look up what window.location = '/' does
 
