@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import { GlobalContext } from "../context/GlobalState";
 
 export const AddGoal = () => {
-  const [goal, setGoal] = useState("");
+  const [goalText, setGoal] = useState("");
   
 
   const { addGoal } = useContext(GlobalContext);
@@ -12,7 +12,7 @@ export const AddGoal = () => {
 
     const newGoal = {
       id: Math.floor(Math.random() * 100000000), //coz uuid wasn't working
-      goal,
+      goalText,
       
     };
 
@@ -27,7 +27,7 @@ export const AddGoal = () => {
           <label htmlFor="text">Text</label>
           <input
             type="text"
-            value={goal}
+            value={goalText}
             onChange={(e) => setGoal(e.target.value)}
             placeholder="Enter text..."
           />
