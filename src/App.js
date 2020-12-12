@@ -1,23 +1,26 @@
-import React from 'react';
-import {BrowserRouter as Router, Route } from "react-router-dom";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from "react";
+import { Header } from "./components/Header";
+import { Balance } from "./components/Balance";
+import { IncomeExpenses } from "./components/IncomeExpenses";
+import { TransactionList } from "./components/TransactionList";
+import { AddTransaction } from "./components/AddTransaction";
+import {AddGoal} from "./components/AddGoal"
+import { GlobalProvider } from "./context/GlobalState";
 
-import Navbar from "./components/navbar"
-import CreateSpend from "./components/createSpend"
-import CreateUser from "./components/createUser"
-import EditSpend from "./components/editSpend"
-import SpendList from "./components/spendList"
+import "./App.css";
 
 function App() {
   return (
-   <Router>
-     <Navbar />
-     <br/>
-     <Route path="/" exact component={SpendList}/>
-     <Route path="/edit/:id" component={EditSpend}/>
-     <Route path="/create" component={CreateSpend}/>
-     <Route path="/user" component={CreateUser}/>
-   </Router>
+    <GlobalProvider>
+      <Header />
+      <div className="container">
+        <Balance />
+        <IncomeExpenses />
+        <TransactionList />
+        <AddTransaction />
+        <AddGoal />
+      </div>
+    </GlobalProvider>
   );
 }
 

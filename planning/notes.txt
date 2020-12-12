@@ -1,1 +1,5 @@
 {% comment %} https://github.com/shamahoque/mern-expense-tracker {% endcomment %}
+
+{% comment %} https://github.com/TapasDash/mern-stack-expense-tracker-app {% endcomment %}
+
+{% comment %} https://github.com/niinpatel/expense-tracker/blob/master/controllers/incomeControl.js {% endcomment %}
