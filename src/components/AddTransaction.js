@@ -4,6 +4,7 @@ import { GlobalContext } from "../context/GlobalState";
 export const AddTransaction = () => {
   const [text, setText] = useState("");
   const [amount, setAmount] = useState(0);
+  const [goal, setGoal] = useState([])
 
   const { addTransaction } = useContext(GlobalContext);
 
@@ -14,6 +15,7 @@ export const AddTransaction = () => {
       id: Math.floor(Math.random() * 100000000), //coz uuid wasn't working
       text,
       amount: parseInt(amount),
+      goal,
     };
 
     addTransaction(newTransaction);
@@ -49,3 +51,7 @@ export const AddTransaction = () => {
     </div>
   );
 };
+
+//Next steps are I need to show all goals and allow user to connect spend with goal on spend creation
+
+//Possibly make a dropdown where they can select from existing goals

@@ -3,3 +3,14 @@
 {% comment %} https://github.com/TapasDash/mern-stack-expense-tracker-app {% endcomment %}
 
 {% comment %} https://github.com/niinpatel/expense-tracker/blob/master/controllers/incomeControl.js {% endcomment %}
+
+{% comment %} #####Very Good######3 {% endcomment %}
+{% comment %} https://auth0.com/blog/complete-guide-to-react-user-authentication/ {% endcomment %}
+
+{% comment %} https://dev.to/amanhimself/build-a-expense-tracker-app-with-react-hooks-and-localstorage-api-4lfj {% endcomment %}
+
+
+{% comment %} https://morioh.com/p/27ce6491ad3c {% endcomment %}
+
+
+{% comment %} https://medium.com/javascript-in-plain-english/authentication-in-react-caf2abfa0494 {% endcomment %}
