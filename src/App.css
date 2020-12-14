@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=B612&display=swap');
 
 :root {
   --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -9,14 +9,14 @@
 }
 
 body {
-  background-color: #f7f7f7;
+  background-color: #787b7e;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   margin: 0;
-  font-family: "Lato", sans-serif;
+  font-family: "B612", sans-serif;
 }
 
 .container {
@@ -65,11 +65,11 @@ h4 {
 }
 
 .money.plus {
-  color: #2ecc71;
+  color: #0b7a39;
 }
 
 .money.minus {
-  color: #c0392b;
+  color: #700f05;
 }
 
 label {

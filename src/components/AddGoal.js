@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import { GlobalContext } from "../context/GlobalState";
-
+import Button from '@material-ui/core/Button';
 export const AddGoal = () => {
   const [goalText, setGoal] = useState("");
   
@@ -32,8 +32,9 @@ export const AddGoal = () => {
             placeholder="Enter text..."
           />
         </div>
-       
+       <Button>
         <button className="btn">Add Goal</button>
+       </Button>
       </form>
     </div>
   );

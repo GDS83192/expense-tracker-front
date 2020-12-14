@@ -1,9 +1,8 @@
 import React, { useContext, useEffect } from "react";
 import { GlobalContext } from "../context/GlobalState";
 import { Transaction } from "./Transaction";
-import {Goal} from "./Goal"
 export const TransactionList = () => {
-  const { transactions, getTransactions, goals, getGoals } = useContext(GlobalContext);
+  const { transactions, getTransactions } = useContext(GlobalContext);
 
   //we use useEffect when we make http request from a component
   useEffect(() => {

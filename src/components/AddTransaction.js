@@ -1,4 +1,5 @@
 import React, { useState, useContext } from "react";
+import Button from '@material-ui/core/Button';
 import { GlobalContext } from "../context/GlobalState";
 
 export const AddTransaction = () => {
@@ -37,7 +38,7 @@ export const AddTransaction = () => {
         <div className="form-control">
           <label htmlFor="amount">
             Amount <br />
-            (positive - income, negative - expense)
+            {/* (positive - income, negative - expense) */}
           </label>
           <input
             type="number"
@@ -46,7 +47,9 @@ export const AddTransaction = () => {
             placeholder="Enter amount..."
           />
         </div>
+        <Button>
         <button className="btn">Add transaction</button>
+        </Button>
       </form>
     </div>
   );

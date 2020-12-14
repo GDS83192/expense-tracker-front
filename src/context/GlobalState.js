@@ -23,13 +23,12 @@ export const GlobalProvider = ({ children }) => {
   const getTransactions = async () => {
     try {
       const res = await axios.get("/api/v1/transactions");
-      // we do need to include the --prefix  i.e http://localhost:5000
-      //coz we added it in the proxy in package.json file
+    // url is in proxy
       dispatch({
         type: "GET_TRANSACTIONS",
         payload: res.data.data,
       });
-      //we'll dispacth our JSON response i.e res.data.data to our state
+      //Here we dispatch json response (res.data) to state
     } catch (error) {
       dispatch({
         type: "TRANSACTION_ERROR",

@@ -18,7 +18,7 @@ export const GoalList = () => {
           <Goal key={goal.id} goal={goal} />
         ))}
       </ul>
-     
+     {/* Need to fix Goal Model to not allow empty goals */}
     </div>
   );
 };
