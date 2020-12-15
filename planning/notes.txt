@@ -1,16 +1,26 @@
-{% comment %} https://github.com/shamahoque/mern-expense-tracker {% endcomment %}
+{% comment %}1.  https://github.com/shamahoque/mern-expense-tracker {% endcomment %}
 
-{% comment %} https://github.com/TapasDash/mern-stack-expense-tracker-app {% endcomment %}
+{% comment %}2.  https://github.com/TapasDash/mern-stack-expense-tracker-app {% endcomment %}
 
-{% comment %} https://github.com/niinpatel/expense-tracker/blob/master/controllers/incomeControl.js {% endcomment %}
+{% comment %}3.  https://github.com/niinpatel/expense-tracker/blob/master/controllers/incomeControl.js {% endcomment %}
 
-{% comment %} #####Very Good######3 {% endcomment %}
+{% comment %}4.  #####Very Good######3 {% endcomment %}
 {% comment %} https://auth0.com/blog/complete-guide-to-react-user-authentication/ {% endcomment %}
 
-{% comment %} https://dev.to/amanhimself/build-a-expense-tracker-app-with-react-hooks-and-localstorage-api-4lfj {% endcomment %}
+{% comment %}5.  https://dev.to/amanhimself/build-a-expense-tracker-app-with-react-hooks-and-localstorage-api-4lfj {% endcomment %}
 
 
-{% comment %} https://morioh.com/p/27ce6491ad3c {% endcomment %}
+{% comment %}6.  https://morioh.com/p/27ce6491ad3c {% endcomment %}
 
 
-{% comment %} https://medium.com/javascript-in-plain-english/authentication-in-react-caf2abfa0494 {% endcomment %}
+{% comment %}7.  https://medium.com/javascript-in-plain-english/authentication-in-react-caf2abfa0494 {% endcomment %}
+
+
+
+{% comment %}8. Article About JWT SPA Authentication https://blog.logrocket.com/jwt-authentication-best-practices/#:~:text=Using%20JWT%20for%20SPA%20authentication,to%20the%20client%20is%20safe. {% endcomment %}
+
+{% comment %}9. Best Reference Using Implementations I am familiar with https://github.com/devmikh/expense-tracker/ {% endcomment %}
+
+{% comment %}10. Public and Protected Routes Using React Router https://www.youtube.com/watch?v=Y0-qdp-XBJg {% endcomment %}
+
+{% comment %} 11. Destructuring in React https://medium.com/@lcriswell/destructuring-props-in-react-b1c295005ce0 {% endcomment %}
