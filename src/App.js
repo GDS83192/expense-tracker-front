@@ -8,6 +8,7 @@ import Login from "./components/auth/Login";
 import Alerts from "./components/layout/Alerts";
 import PrivateRoute from "./components/routing/PrivateRoute";
 
+import GoalState from './context/goal/GoalState'
 import ExpenseState from "./context/expense/ExpenseState";
 import AuthState from "./context/auth/AuthState";
 import AlertState from "./context/alert/AlertState";
@@ -22,6 +23,7 @@ const App = () => {
   return (
     <AuthState>
       <ExpenseState>
+        <GoalState>
         <AlertState>
           <Router>
             <Fragment>
@@ -38,6 +40,7 @@ const App = () => {
             </Fragment>
           </Router>
         </AlertState>
+        </GoalState>
       </ExpenseState>
     </AuthState>
   );

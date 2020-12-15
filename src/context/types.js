@@ -22,3 +22,10 @@ export const LOGIN_FAIL = "LOGIN_FAIL";
 export const LOGOUT = "LOGOUT";
 export const CLEAR_ERRORS = "CLEAR_ERRORS";
 export const UPDATE_CHART_DATA = "UPDATE_CHART_DATA";
+
+export const GET_GOALS = "GET_EXPENSES";
+export const ADD_GOAL = "ADD_EXPENSE";
+export const DELETE_GOAL = "DELETE_EXPENSE";
+export const UPDATE_GOAL = "UPDATE_EXPENSE";
+export const CLEAR_GOALS = "CLEAR_EXPENSES";
+export const GOAL_ERROR = "EXPENSE_ERROR";

@@ -27,9 +27,9 @@ const Login = props => {
   });
 
   const { email, password } = user;
-// Here the spread operator sets the user 
-  const onChange = e => setUser({ ...user, [e.target.name]: e.target.value }, console.log(...user));
-//This uses the user model to set e.target.name which is the same name used in the model for that attribute and sets it to e.target.value, creating a new user Object to send to DB
+
+  const onChange = e => setUser({ ...user, [e.target.name]: e.target.value });
+
   const onSubmit = e => {
     e.preventDefault();
     if (email === "" || password === "") {
