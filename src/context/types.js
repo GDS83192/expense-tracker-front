@@ -23,9 +23,9 @@ export const LOGOUT = "LOGOUT";
 export const CLEAR_ERRORS = "CLEAR_ERRORS";
 export const UPDATE_CHART_DATA = "UPDATE_CHART_DATA";
 
-export const GET_GOALS = "GET_EXPENSES";
-export const ADD_GOAL = "ADD_EXPENSE";
-export const DELETE_GOAL = "DELETE_EXPENSE";
-export const UPDATE_GOAL = "UPDATE_EXPENSE";
-export const CLEAR_GOALS = "CLEAR_EXPENSES";
-export const GOAL_ERROR = "EXPENSE_ERROR";
+export const GET_GOALS = "GET_GOALS";
+export const ADD_GOAL = "ADD_GOAL";
+export const DELETE_GOAL = "DELETE_GOAL";
+export const UPDATE_GOAL = "UPDATE_GOAL";
+export const CLEAR_GOALS = "CLEAR_GOALS";
+export const GOAL_ERROR = "GOAL_ERROR";

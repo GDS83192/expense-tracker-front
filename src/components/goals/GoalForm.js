@@ -1,5 +1,5 @@
 import React, { useState, useContext, useEffect } from "react";
-import GoalContext from "../../context/expense/expenseContext";
+import GoalContext from "../../context/goal/goalContext";
 
 const GoalForm = () => {
   let today = new Date();

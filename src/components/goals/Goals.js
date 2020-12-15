@@ -1,7 +1,7 @@
 import React, { Fragment, useContext, useEffect } from "react";
 import GoalItem from "./GoalItem";
 import Spinner from "../layout/Spinner";
-import GoalContext from "../../context/expense/goalContext";
+import GoalContext from "../../context/goal/goalContext";
 
 const Goals = () => {
   const goalContext = useContext(GoalContext);
@@ -23,7 +23,7 @@ const Goals = () => {
   }, []);
 
   if (goals !== null && goals.length === 0 && !loading) {
-    return <h4>No expenses found</h4>;
+    return <h4>No goals found</h4>;
   }
 
   return (
@@ -48,12 +48,8 @@ const Goals = () => {
             </tr>
           </thead>
           <tbody>
-            {filtered !== null
-              ? filtered.map(expense => (
-                  <ExpenseItem key={expense._id} expense={expense} />
-                ))
-              : expenses.map(expense => (
-                  <ExpenseItem key={expense._id} expense={expense} />
+            { goals.map(goal => (
+                  <GoalItem key={goal._id} goal={goal} />
                 ))}
           </tbody>
         </table>
@@ -64,4 +60,4 @@ const Goals = () => {
   );
 };
 
-export default Expenses;
+export default Goals;

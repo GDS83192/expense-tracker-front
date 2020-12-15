@@ -1,0 +1,22 @@
+Uncaught TypeError: reducer is not a function
+    React 3
+    GoalState GoalState.js:20
+    React 11
+    unstable_runWithPriority scheduler.development.js:818
+    React 5
+    getGoals GoalState.js:35
+react-dom.development.js:16696
+The above error occurred in the <GoalState> component:
+    in GoalState (at App.js:26)
+    in ExpenseState (at App.js:25)
+    in AuthState (at App.js:24)
+    in App (at src/index.js:5)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://fb.me/react-error-boundaries to learn more about error boundaries. index.js:1375
+Uncaught (in promise) TypeError: err.response is undefined
+    getGoals GoalState.js:43
+GoalState.js:43
+Warning: Can't perform a React state update on an unmounted component. This is a no-op, but it indicates a memory leak in your application. To fix, cancel all subscriptions and asynchronous tasks in a useEffect cleanup function.
+    in AuthState (at App.js:24)
+    in App (at src/index.js:5)
