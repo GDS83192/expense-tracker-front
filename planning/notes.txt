@@ -24,3 +24,11 @@
 {% comment %}10. Public and Protected Routes Using React Router https://www.youtube.com/watch?v=Y0-qdp-XBJg {% endcomment %}
 
 {% comment %} 11. Destructuring in React https://medium.com/@lcriswell/destructuring-props-in-react-b1c295005ce0 {% endcomment %}
+
+{% comment %} 12. Alerts in React https://dev.to/sahilthakur7/alerts-system-in-react-and-redux-2hg5 {% endcomment %}
+
+{% comment %} 13. Jwt lightweight authentication https://dzone.com/articles/jwt-token-lightweight-token-based-authentication {% endcomment %}
+
+{% comment %} 14a. Vlog of making a Mint clone https://www.youtube.com/watch?v=CIGd9JvmIZ0 {% endcomment %}
+
+{% comment %} 14b. Github Repo of Mint Clone https://github.com/ShandonCodes/Lint {% endcomment %}

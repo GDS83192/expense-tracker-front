@@ -20,3 +20,16 @@ GoalState.js:43
 Warning: Can't perform a React state update on an unmounted component. This is a no-op, but it indicates a memory leak in your application. To fix, cancel all subscriptions and asynchronous tasks in a useEffect cleanup function.
     in AuthState (at App.js:24)
     in App (at src/index.js:5)
+
+
+
+
+    {% comment %} /////////////////////// {% endcomment %}
+
+  2.   Uncaught (in promise) TypeError: addGoal is not a function
+    onSubmit GoalForm.js:56
+    React 17
+    unstable_runWithPriority scheduler.development.js:818
+    React 22
+    js index.js:5
+    Webpack 7
