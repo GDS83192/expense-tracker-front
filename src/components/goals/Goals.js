@@ -42,9 +42,9 @@ const Goals = () => {
           <thead>
             <tr>
               
-              <th className='hide-sm'>Description</th>
-              <th>Edit</th>
-              <th>Delete</th>
+              <th className='hide-sm'>Goal Description:</th>
+              <th>Edit Goal:</th>
+              <th>Delete Goal:</th>
             </tr>
           </thead>
           <tbody>

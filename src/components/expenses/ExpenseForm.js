@@ -74,7 +74,7 @@ const ExpenseForm = () => {
 
   return (
     <form onSubmit={onSubmit}>
-      <h2 className='text-primary'>{current ? "Edit Entry" : "Add Entry"}</h2>
+      <h2 className='text-primary'>{current ? "Edit Entry" : "Add Expense"}</h2>
       <h4>Date</h4>
       <input
         type='date'
@@ -111,7 +111,7 @@ const ExpenseForm = () => {
         <option value='Transportation/Transit'>Transportation/Transit</option>
         <option value='Travel'>Travel</option>
       </select>
-      <h4>Description</h4>
+      <h4>Goal this contributes to:</h4>
       <input
         type='text'
         placeholder='(optional)'

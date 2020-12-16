@@ -20,6 +20,7 @@ const GoalItem = ({ goal }) => {
  
 
   return (
+      
     <tr>
       
       <td className='hide-sm'>{description}</td>
@@ -28,12 +29,12 @@ const GoalItem = ({ goal }) => {
           className='btn btn-dark btn-sm'
           onClick={() => setCurrent(goal)}
         >
-          Edit
+          Edit Goal
         </button>
       </td>
       <td style={{ textAlign: "center" }}>
         <button className='btn btn-danger btn-sm' onClick={onDelete}>
-          Delete
+          Delete Goal
         </button>
       </td>
     </tr>

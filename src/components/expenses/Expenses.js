@@ -41,10 +41,10 @@ const Expenses = () => {
 
           <thead>
             <tr>
-              <th>Date</th>
-              <th>Amount</th>
-              <th>Category</th>
-              <th className='hide-sm'>Description</th>
+              <th>Expense Date:</th>
+              <th>Expense Amount:</th>
+              <th>Expense Category:</th>
+              <th className='hide-sm'>Goal Expense Contributes To:</th>
               <th>Edit</th>
               <th>Delete</th>
             </tr>

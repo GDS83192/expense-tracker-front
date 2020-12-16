@@ -2,7 +2,7 @@
 
 /* Global Styles */
 :root {
-  --primary-color: #003699;
+  --primary-color: #0f760c;
   --dark-color: #333333;
   --light-color: #f4f4f4;
   --danger-color: #dc3545;
@@ -156,6 +156,9 @@ img {
 }
 .my-3 {
   margin: 3rem 0;
+}
+.about-emph{
+  font-size: 2rem;
 }
 
 /* Grid */

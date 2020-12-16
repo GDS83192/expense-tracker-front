@@ -17,7 +17,7 @@ const ExpenseSortBy = () => {
 
   return (
     <div>
-      <h4>Sort By</h4>
+      <h4>SortExpenses By: </h4>
       <select name='sort' value={sortBy} onChange={onChange}>
         <option value='Date'>Date</option>
         <option value='Amount'>Amount</option>

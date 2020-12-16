@@ -33,7 +33,7 @@ const GoalForm = () => {
         description: ""
       });
     }
-    // eslint-disable-next-line
+    
   }, [goalContext, current]);
 
   const [goal, setGoal] = useState({
@@ -75,7 +75,7 @@ const GoalForm = () => {
       <h4>Description</h4>
       <input
         type='text'
-        placeholder='(optional)'
+        placeholder='S.M.A.R.T'
         name='description'
         value={description}
         onChange={onChange}
