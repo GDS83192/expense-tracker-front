@@ -33,7 +33,7 @@ const ExpenseState = props => {
   // Get Expenses
   const getExpenses = async () => {
     try {
-      const res = await axios.get("/api/expenses");
+      const res = await axios.get(`${process.env.REACT_APP_BASE_URL}/api/expenses`);
 
       dispatch({
         type: GET_EXPENSES,
@@ -57,7 +57,7 @@ const ExpenseState = props => {
     };
 
     try {
-      const res = await axios.post("/api/expenses", expense, config);
+      const res = await axios.post(`${process.env.REACT_APP_BASE_URL}/api/expenses`, expense, config);
 
       dispatch({
         type: ADD_EXPENSE,
@@ -72,7 +72,7 @@ const ExpenseState = props => {
   // Delete Expense
   const deleteExpense = async id => {
     try {
-      await axios.delete(`/api/expenses/${id}`);
+      await axios.delete(`${process.env.REACT_APP_BASE_URL}/api/expenses/${id}`);
 
       dispatch({
         type: DELETE_EXPENSE,
@@ -93,7 +93,7 @@ const ExpenseState = props => {
 
     try {
       const res = await axios.put(
-        `/api/expenses/${expense._id}`,
+        `${process.env.REACT_APP_BASE_URL}/api/expenses/${expense._id}`,
         expense,
         config
       );
