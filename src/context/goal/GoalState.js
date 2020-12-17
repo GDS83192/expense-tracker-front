@@ -30,7 +30,7 @@ const GoalState = props => {
   // Get Expenses
   const getGoals = async () => {
     try {
-      const res = await axios.get("/api/goals");
+      const res = await axios.get(`${process.env.REACT_APP_URL}/api/goals`);
 
       dispatch({
         type: GET_GOALS,
@@ -54,7 +54,7 @@ const GoalState = props => {
     };
 
     try {
-      const res = await axios.post("/api/goals", goal, config);
+      const res = await axios.post(`${process.env.REACT_APP_URL}`, goal, config);
 
       dispatch({
         type: ADD_GOAL,
@@ -69,7 +69,7 @@ const GoalState = props => {
   // Delete Expense
   const deleteGoal = async id => {
     try {
-      await axios.delete(`/api/goals/${id}`);
+      await axios.delete(`${process.env.REACT_APP_URL}/api/goals/${id}`);
 
       dispatch({
         type: DELETE_GOAL,

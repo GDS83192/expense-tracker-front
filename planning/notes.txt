@@ -32,3 +32,5 @@
 {% comment %} 14a. Vlog of making a Mint clone https://www.youtube.com/watch?v=CIGd9JvmIZ0 {% endcomment %}
 
 {% comment %} 14b. Github Repo of Mint Clone https://github.com/ShandonCodes/Lint {% endcomment %}
+
+{% comment %}15. Auth using useReducer and useContext https://soshace.com/react-user-login-authentication-using-usecontext-and-usereducer/ {% endcomment %}
