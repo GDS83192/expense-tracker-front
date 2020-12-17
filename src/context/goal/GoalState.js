@@ -54,7 +54,7 @@ const GoalState = props => {
     };
 
     try {
-      const res = await axios.post(`${process.env.REACT_APP_BASE_URL}`, goal, config);
+      const res = await axios.post(`${process.env.REACT_APP_BASE_URL}/api/goals`, goal, config);
 
       dispatch({
         type: ADD_GOAL,
