@@ -90,7 +90,7 @@ const GoalState = props => {
 
     try {
       const res = await axios.put(
-        `/api/goals/${goal._id}`,
+        `${process.env.REACT_APP_URL}/api/goals/${goal._id}`,
         goal,
         config
       );
