@@ -39,6 +39,7 @@
 4. Use nodemon command to start backend server
 5. Use npm start command to start React frontend.
 6. Run as Docker container by running docker-compose build from root directory.
+   Adding comment to allow repush
 
 # Features
 1. Runs as Docker container 
