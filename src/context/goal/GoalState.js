@@ -30,7 +30,7 @@ const GoalState = props => {
   // Get Expenses
   const getGoals = async () => {
     try {
-      const res = await axios.get(`${process.env.REACT_APP_BASE_URL}/api/goals`);
+      const res = await axios.get("/api/goals");
 
       dispatch({
         type: GET_GOALS,
@@ -54,7 +54,7 @@ const GoalState = props => {
     };
 
     try {
-      const res = await axios.post(`${process.env.REACT_APP_BASE_URL}/api/goals`, goal, config);
+      const res = await axios.post("/api/goals", goal, config);
 
       dispatch({
         type: ADD_GOAL,
@@ -69,7 +69,7 @@ const GoalState = props => {
   // Delete Expense
   const deleteGoal = async id => {
     try {
-      await axios.delete(`${process.env.REACT_APP_BASE_URL}/api/goals/${id}`);
+      await axios.delete(`/api/goals/${id}`);
 
       dispatch({
         type: DELETE_GOAL,
@@ -90,7 +90,7 @@ const GoalState = props => {
 
     try {
       const res = await axios.put(
-        `${process.env.REACT_APP_BASE_URL}/api/goals/${goal._id}`,
+        `/api/goals/${goal._id}`,
         goal,
         config
       );
@@ -124,3 +124,36 @@ const GoalState = props => {
 
 
  
+
+ 
+  
+
+
+  return (
+    <GoalContext.Provider
+      value={{
+        goals: state.goals,
+        current: state.current,
+        
+       
+        
+        error: state.error,
+        
+        
+        addGoal,
+        deleteGoal,
+        setCurrent,
+        clearCurrent,
+        updateGoal,
+      
+       
+        getGoals,
+        clearGoals
+      }}
+    >
+      {props.children}
+    </GoalContext.Provider>
+  );
+};
+
+export default GoalState;
