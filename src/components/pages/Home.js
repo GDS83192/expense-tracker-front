@@ -6,6 +6,7 @@ import ExpenseSortBy from "../expenses/ExpenseSortBy";
 import AuthContext from "../../context/auth/authContext";
 import Goals from "../goals/Goals";
 import GoalForm from "../goals/GoalForm"
+import Smart from "../layout/Smart"
 const Home = () => {
   const authContext = useContext(AuthContext);
 
@@ -15,6 +16,8 @@ const Home = () => {
   }, []);
 
   return (
+    <>
+    <Smart />
     <div className='grid-custom'>
       <div>
         <ExpenseForm />
@@ -25,8 +28,10 @@ const Home = () => {
         <ExpenseFilter />
         <Expenses />
         <Goals />
+        
       </div>
     </div>
+    </>
   );
 };
 

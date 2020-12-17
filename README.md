@@ -1,12 +1,12 @@
 # SMARTSPEND
 
 # Description
-
+SMARTSpend is a budgeting app that helps users remember what they are working towards. Keep your personal goals and budget in one place to remind yourself why you keep a budget!
 # Project
 [Github Frontend](https://github.com/GDS83192/expense-tracker-front)
 [Github Backend](https://github.com/GDS83192/expense-tracker-backend)
-[Heroku Deployed Frontend]()
-[Heroku Deployed Backend]()
+[Heroku Deployed Frontend](https://smartspend-front.herokuapp.com/)
+[Heroku Deployed Backend](https://smartspend-back.herokuapp.com/)
 
 # Wireframes 
 [Figma Wireframes](https://www.figma.com/file/IkOyN7xkaZ5aVdH0Km2rLv/Project-4?node-id=0%3A1)
@@ -45,4 +45,107 @@
 1. Runs as Docker container 
 2. Built using React hooks to make the code DRYer and easier to read
 3. Uses JWT for lightweight authentication mechanism.
+4. Responsive Design
+5. Fragments
 
+- App.js using Hooks 
+```
+import React, { Fragment } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Navbar from "./components/layout/Navbar";
+import Home from "./components/pages/Home";
+import About from "./components/pages/About";
+import Register from "./components/auth/Register";
+import Login from "./components/auth/Login";
+import Alerts from "./components/layout/Alerts";
+import PrivateRoute from "./components/routing/PrivateRoute";
+
+import GoalState from './context/goal/GoalState'
+import ExpenseState from "./context/expense/ExpenseState";
+import AuthState from "./context/auth/AuthState";
+import AlertState from "./context/alert/AlertState";
+import setAuthToken from "./utils/setAuthToken";
+import "./App.css";
+
+if (localStorage.token) {
+  setAuthToken(localStorage.token);
+}
+
+const App = () => {
+  return (
+    <AuthState>
+      <ExpenseState>
+        <GoalState>
+        <AlertState>
+          <Router>
+            <Fragment>
+              <Navbar />
+              <div className='container'>
+                <Alerts />
+                <Switch>
+                  <PrivateRoute exact path='/' component={Home} />
+                  <Route exact path='/about' component={About} />
+                  <Route exact path='/register' component={Register} />
+                  <Route exact path='/login' component={Login} />
+                </Switch>
+              </div>
+            </Fragment>
+          </Router>
+        </AlertState>
+        </GoalState>
+      </ExpenseState>
+    </AuthState>
+  );
+};
+
+export default App;
+```
+
+## Technologies
+
+### Frontend
+
+- [React](https://reactjs.org/)
+  
+### NPM
+
+- [Axios](https://www.npmjs.com/package/axios)
+- [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)
+- [express=validator](https://www.npmjs.com/package/express-validator)
+- [bcrypt](https://www.npmjs.com/package/bcrypt)
+- [config](https://www.npmjs.com/package/config)
+
+### Database
+
+- [MongoDB](https://docs.mongodb.com/manual/)
+- [Mongoose](https://www.npmjs.com/package/mongoose)
+
+### Backend
+
+- [Express](https://expressjs.com/)
+
+### Version Control / Deployment
+
+- [Git](https://git-scm.com/doc)
+- [Heroku](https://devcenter.heroku.com/categories/reference)
+
+
+### Approach
+
+| Time    |                                      Task                                      |
+| ------- | :----------------------------------------------------------------------------: |
+| 1 Day   | Brainstorm ideas, create wireframes, develop outline of project structure |
+|0.5 Days | Completing React Hooks and Redux Tutorials
+|0.5 Days | Completing Docker Containerization and Plaid API Tutorial
+| 1 Day  |                     Initial UX design and front end setup                      |
+| 1 Day  |                     Build back end API's                     |
+| 1 Day   |            Testing, troubleshooting, refining styling of components            |
+| 1/2 Day |                                Final polishing                                 |
+| 1/2 Day |                                   Deployment                                   |
+
+
+# Future Plans
+1. Add profile component so users can customize their bio and avatar
+2. Implement functionality to allow users to connect to financial accounts for automatic expense logging vs. manual
+3. Add interactive elements such as positive messages when a user aa
+4. Integrations with other lifestyle apps -- Toggl (Timetracker), Udemy, etc -- work to integrate applications so users can align them with their own personal goals.

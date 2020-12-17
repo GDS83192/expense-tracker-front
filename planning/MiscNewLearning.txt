@@ -1,0 +1,22 @@
+
+Safari, FireFox, Chrome Last 1:
+
+Browser list in package.json e.g. Safar Last 1 is used to ensure JavaScirpt will be compatible. 
+
+----------------------------------------------------------------
+Morgan: 
+morgan(format, options)
+Create a new morgan logger middleware function using the given format and options. The format argument may be a string of a predefined name (see below for the names), a string of a format string, or a function that will produce a log entry.
+
+The format function will be called with three arguments tokens, req, and res, where tokens is an object with all defined tokens, req is the HTTP request and res is the HTTP response. The function is expected to return a string that will be the log line, or undefined / null to skip logging.
+
+________________________________________________________________
+
+React Fragment
+
+https://reactjs.org/docs/fragments.html
+https://medium.com/@yurachoi/react-js-fragments-175290da6435
+"If you don’t wrap your child components using those tags, then you’d face a syntax error message reminding you that adjacent JSX elements must be wrapped in an enclosing tag. Essentially, you can’t return more than once at a time in a method call, and you can’t return nothing either, so using <div> or <span> tags has been necessary when working with React.
+At the end of the day, however, we’re all trying to avoid expensive DOM operations and make our code as efficient as possible. With this updated version of React, you can return your child components without adding extra nodes to the DOM using Fragments.
+Fragment is a first-class component that you can use to wrap your child components and elements in place of <div> or <span> tags:
+"

@@ -114,7 +114,7 @@ const ExpenseForm = () => {
       <h4>Goal this contributes to:</h4>
       <input
         type='text'
-        placeholder='(optional)'
+        placeholder='(Goal)'
         name='description'
         value={description}
         onChange={onChange}
