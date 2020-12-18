@@ -4,10 +4,14 @@
 SMARTSpend is a budgeting app that helps users remember what they are working towards. Keep your personal goals and budget in one place to remind yourself why you keep a budget!
 # Project
 [Github Frontend](https://github.com/GDS83192/expense-tracker-front)
+
 [Github Backend](https://github.com/GDS83192/expense-tracker-backend)
+
 [Heroku Deployed Frontend](https://smartspend-front.herokuapp.com/)
+
 [Heroku Deployed Backend](https://smartspend-back.herokuapp.com/)
 
+[screenshot](https://github.com/GDS83192/expense-tracker-front/blob/main/planning%2FProject-4-Screenshot.png)
 # Wireframes 
 [Figma Wireframes](https://www.figma.com/file/IkOyN7xkaZ5aVdH0Km2rLv/Project-4?node-id=0%3A1)
 
@@ -100,8 +104,13 @@ const App = () => {
 
 export default App;
 ```
+## Challenges
 
-## Technologies
+1. Connecting to real-world financial accounts
+2. Deploying and connecting separate front and back end applications.
+3. Building with javascript after studying Python for 2 weeks.
+4. Making a docker file and docker compose file.
+5. ## Technologies
 
 ### Frontend
 
