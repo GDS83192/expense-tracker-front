@@ -12,7 +12,7 @@ const ExpenseFilter = () => {
       text.current.value = "";
     }
   });
-
+//set filer to input value
   const onChange = e => {
     if (text.current.value !== "") {
       filterExpenses(e.target.value);

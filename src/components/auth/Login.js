@@ -8,7 +8,7 @@ const Login = props => {
 
   const { setAlert } = alertContext;
   const { login, error, clearErrors, isAuthenticated } = authContext;
-
+//If authentication is successful redirect to Home
   useEffect(() => {
     if (isAuthenticated) {
       props.history.push("/");
@@ -18,18 +18,18 @@ const Login = props => {
       setAlert(error, "danger");
       clearErrors();
     }
-    // eslint-disable-next-line
+    
   }, [error, isAuthenticated, props.history]);
 
   const [user, setUser] = useState({
     email: "",
     password: ""
   });
-
+//add email and password to user object with input
   const { email, password } = user;
 
   const onChange = e => setUser({ ...user, [e.target.name]: e.target.value });
-
+//Alert if email or password is empty string otherwise run login passing email and password
   const onSubmit = e => {
     e.preventDefault();
     if (email === "" || password === "") {

@@ -8,7 +8,7 @@ const Register = props => {
 
   const { setAlert } = alertContext;
   const { register, error, clearErrors, isAuthenticated } = authContext;
-
+//Redirect to / on successful registration
   useEffect(() => {
     if (isAuthenticated) {
       props.history.push("/");
@@ -18,9 +18,8 @@ const Register = props => {
       setAlert(error, "danger");
       clearErrors();
     }
-    // eslint-disable-next-line
   }, [error, isAuthenticated, props.history]);
-
+//Allows us to set state in functional component. Inintal state is empty strings, then call setUser with updated info
   const [user, setUser] = useState({
     name: "",
     email: "",

@@ -5,7 +5,7 @@ const ExpenseForm = () => {
   let today = new Date();
   let dd = today.getDate();
   let mm = today.getMonth() + 1;
-
+//Set date for expense entry
   let yyyy = today.getFullYear();
   if (dd < 10) {
     dd = "0" + dd;
@@ -24,7 +24,7 @@ const ExpenseForm = () => {
     sortExpenses,
     current
   } = expenseContext;
-
+//If there is data present, keep it on re-render, else set Expense to defaults
   useEffect(() => {
     if (current !== null) {
       setExpense(current);
@@ -36,7 +36,6 @@ const ExpenseForm = () => {
         description: ""
       });
     }
-    // eslint-disable-next-line
   }, [expenseContext, current]);
 
   const [expense, setExpense] = useState({
@@ -79,6 +78,7 @@ const ExpenseForm = () => {
       <input
         type='date'
         name='date'
+        //Sets date to YYYY-MM-DD
         value={date.toString().slice(0, 10)}
         onChange={onChange}
       />

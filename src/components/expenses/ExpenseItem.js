@@ -79,7 +79,7 @@ const ExpenseItem = ({ expense }) => {
     </tr>
   );
 };
-
+// Warn in console if expense item is no an object
 ExpenseItem.propTypes = {
   expense: PropTypes.object.isRequired
 };
