@@ -1,0 +1,61 @@
+	•	use state is not the only way to manage they react. UseReducer also allows you to manage state and re-render a component whenever that state changes
+	•	It gives you a more complex way to handle complex actions with complex state 
+	•	It gives you set actions that you can perform on your state and it converts your current state to the new state based on the action that you send it. 
+	•	The useReducer hook has a very similar pattern to redux but takes away a lot of the boilerplate associated with redux
+	•	TO USE Use Reducer: 
+	⁃	useReducer takes two parameters 
+	⁃	1. Reducer, which is a function you perform on your state to get new state
+	⁃	2. An initial value
+	⁃	Generally when you work with Reducer and useReducer you’re going to use objects instead of actual values because generally your state is more complex than just a single value so we’re going to use an object because that’s most common.
+	•	The dispatch function is essentially what we call in order to update our state
+	⁃	Essentially dispatch calls the reducer for us given certain parameters
+	⁃	The reducer will take two things, the current state (where our application is currently at)
+	⁃	Its also going to take an action, and this action is what we pass into the dispatch function 
+	⁃	Whatever we call dispatch with is going to get set to the current action and the current state is going to be in the state variable and our reducer will return our new updated state
+	⁃	PAYLOAD is an object which essentially contains all of the variable values we need to actually perform that action 
+	⁃	All of the actions you might want to take are inside of the reducer function ‘
+	⁃	When we pass everything down to our 1 todo all we need to pass is our dispatch function 
+	⁃	It really cleans up your props and makes your code easier and cleaner
+
+NEW VID
+
+	•	UseReducer is an alternative to the useTate Hook and makes code easier to reuse and read
+	⁃	You pass 2 parameters to useReducer
+	⁃	The Reducer is a function
+	⁃	You create the function outside of a component
+	⁃	const [] = useReducer(reducer, 0)
+	⁃	Function reducer takes the current state and an action
+	⁃	The action is a function that gets called and result gets stored in action
+	⁃	whenever the action is not an increment or decrement we should just return the state 
+	⁃	If you have more than 1 item you’ll use …state, but if you only have item you’d use …state.itemName
+
+ADDITIONAL NOTES
+	▪	No global context because auth=context is used
+	⁃	https://soshace.com/react-user-login-authentication-using-usecontext-and-usereducer/
+	▪	With state we create a piece of state and the action we want to call on it
+	⁃	We then connect these pieces of state to our inputs
+	▪	Can watch state from developer tools
+	▪	IF YOU AREN”T USING GLOBAL STATE THEN EACH CONTEXT NEEDS TO HAVE A REDUCER
+
+TRAVERSY
+	▪	A reducer is basically how we specify the application state changes in response to certain actins to our store (to our context)
+	⁃	Export a default function that takes in state and some kind of action
+	⁃	A type is kind of like an ID like add_transaction, delete_transaction or default
+	⁃	We have a reducer we pass it first in the import statement, then we pass it in to useReducer then we can access state values from our initial state and then we’re passing that into the value of our provider
+	⁃	We can pull in anything from context using the useContext Hook, which we import
+	▪	Review destructuring
+	▪	The toFixed() method formats a number using fixed-point notation.
+	⁃	So toFixed(2) means to 2 decimal places
+	▪	Reducer is just a way to change your state and send it down to component
+	⁃	We use spread operator to send down all the transactions except the one that was deleted
+	▪	We create an ACTION in our STATE
+	⁃	dispatch the type and the payload is what you want it to be
+	⁃	You pass the action in the Provider value
+	⁃	The spread takes all the transactions our of the array and puts them in state
+	▪	
+
+
+	•	Context provides a way to pass data through the component tree without having to pass props down manually at every level.
+
+	•	Context is designed to share data that can be considered “global” for a tree of React components, such as the current authenticated user, theme, or preferred language.
+	•	

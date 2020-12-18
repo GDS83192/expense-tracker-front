@@ -1,2 +1,0 @@
-Add Plaid API
-Extend Sort functionality to goals (But how to sort?) Date?

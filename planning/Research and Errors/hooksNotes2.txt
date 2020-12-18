@@ -1,0 +1,31 @@
+Usually when we use async await we also include a try catch block
+
+	▪	Response gets sent back as data
+	▪	In order to use request.body we need to add require body parser in server.js
+	▪	res.send vs res.satatus for sending status messages from server
+	▪	In State we make our functions and calls —  the type gets assigned in State so that then those actions, (actions are functions) can be used by different components
+	⁃	res.data will give us the entire object
+	⁃	Here we use res.data.data because we only want the data. First data is the response, 2nd data is the info from the response, just like from class
+	▪	With Spinner you could set to false, then true, then false — but starting as true just makes it a little easier
+	▪	For Asynchronous calls we want to use the useEffect() hook
+	⁃	For any HTTP request made from a component we want to do that in useEffect()
+
+
+	▪	We have our initial state — expenses/goals is empty. Then we have an action getExpense or getGoal which we call from the expense or goal list and what that does is fetches the expenses or goals from the backend
+	⁃	We then dispatch get expenses or get goals in the reducer and we send the data as the payload
+	⁃	Then in the reducer it changes the state, it adds the expenses or goals from the response to our state from which it gets passed down the components
+	⁃	When connecting to a db you need to change all the ids to underscore ids because now its coming from mongo
+	▪	With axis we make a config object o set content type
+	⁃	The config object has a headers object
+	⁃	In the headers object we set “content-type”: ‘application\json”
+	▪	The axiom post request to expenses or goals we set 3 params
+	⁃	Param 1 is the URL
+	⁃	param 2 is expense or goal being added 
+	⁃	third param is config that has headers
+	⁃	Then we do the dispatch
+	▪	NPM run build creates a build folder with our static assets we’ll be deploying (index.html) — when we deploy we deploy to one domain that runs on port 80
+	⁃	In server.js we want to have a route for the root that will load the build folders 
+	⁃	if process.env.NODE_ENV === ‘production’ 	{
+					app.use(express.static(‘client/build’))
+			app.get(‘*’, (req, res) => res.sedFile(path.resolve(__dirname, ‘client’, ‘build’, ‘index.html’)))
+	•	When we’re in production that client buildd folder is going to be our static folder and when we make a request to anything other than our API routes its going to load the index.html file

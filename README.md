@@ -11,7 +11,7 @@ SMARTSpend is a budgeting app that helps users remember what they are working to
 
 [Heroku Deployed Backend](https://smartspend-back.herokuapp.com/)
 
-[screenshot](https://github.com/GDS83192/expense-tracker-front/blob/main/planning%2FProject-4-Screenshot.png)
+![screenshot](planning/Project-4-Screenshot.png)
 # Wireframes 
 [Figma Wireframes](https://www.figma.com/file/IkOyN7xkaZ5aVdH0Km2rLv/Project-4?node-id=0%3A1)
 
