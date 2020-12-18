@@ -43,7 +43,7 @@ SMARTSpend is a budgeting app that helps users remember what they are working to
 4. Use nodemon command to start backend server
 5. Use npm start command to start React frontend.
 6. Run as Docker container by running docker-compose build from root directory.
-   Adding comment to allow repush
+   
 
 # Features
 1. Runs as Docker container 
@@ -52,7 +52,7 @@ SMARTSpend is a budgeting app that helps users remember what they are working to
 4. Responsive Design
 5. Fragments
 
-- App.js using Hooks 
+- App.js  
 ```
 import React, { Fragment } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -144,13 +144,13 @@ export default App;
 | Time    |                                      Task                                      |
 | ------- | :----------------------------------------------------------------------------: |
 | 1 Day   | Brainstorm ideas, create wireframes, develop outline of project structure |
-|0.5 Days | Completing React Hooks and Redux Tutorials
+|0.5 Days | Get Project Approval, outline components, create timeline
+| 1.5 Days  |                     Initial UX design and front end setup                      |
+| 1.5 Days  |                     Build back end API's                     |
 |0.5 Days | Completing Docker Containerization and Plaid API Tutorial
-| 1 Day  |                     Initial UX design and front end setup                      |
-| 1 Day  |                     Build back end API's                     |
 | 1 Day   |            Testing, troubleshooting, refining styling of components            |
-| 1/2 Day |                                Final polishing                                 |
-| 1/2 Day |                                   Deployment                                   |
+| 0.5 Days |                                Final polishing                                 |
+| 0.5 Days |                                   Deployment                                   |
 
 
 # Future Plans
